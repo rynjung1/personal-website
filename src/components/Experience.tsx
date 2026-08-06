@@ -5,7 +5,7 @@ import { experience } from "@/data/experience";
 export default function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-xl font-semibold tracking-tight">Work Experience</h2>
+      <h2 className="font-serif text-2xl italic tracking-tight sm:text-3xl">Work Experience</h2>
 
       <div className="mt-8 flex flex-col gap-5">
         {experience.map((role, index) => (
@@ -15,7 +15,7 @@ export default function Experience() {
                 <div>
                   <div className="flex flex-wrap items-center gap-2">
                     <h3 className="text-lg font-bold text-accent">{role.title}</h3>
-                    <span className="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-400">
+                    <span className="rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-medium text-accent">
                       {role.tag}
                     </span>
                   </div>

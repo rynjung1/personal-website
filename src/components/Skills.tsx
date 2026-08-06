@@ -31,14 +31,14 @@ function SkillItem({ skill }: { skill: Skill }) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-black/[0.03] py-20 dark:bg-white/[0.04]">
+    <section id="skills" className="py-20">
       <div className="mx-auto max-w-5xl px-6">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="mb-12 text-center text-xl font-semibold tracking-tight"
+          className="mb-12 text-center font-serif text-2xl italic tracking-tight sm:text-3xl"
         >
           Technical Skills
         </motion.h2>
@@ -53,8 +53,8 @@ export default function Skills() {
                     <SkillItem key={`row${rowIndex}-${skill.slug}-${index}`} skill={skill} />
                   ))}
                 </div>
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black/[0.03] to-transparent dark:from-white/[0.04]" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black/[0.03] to-transparent dark:from-white/[0.04]" />
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-background to-transparent" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-background to-transparent" />
               </div>
             );
           })}

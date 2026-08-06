@@ -32,7 +32,7 @@ export default function ProjectCard({
         delay: index * 0.1,
         ease: [0.25, 0.1, 0.25, 1],
       }}
-      className="w-full overflow-hidden rounded-lg border border-black/10 bg-white dark:border-white/15 dark:bg-black"
+      className="w-full overflow-hidden rounded-lg border border-black/10 bg-white dark:border-white/15 dark:bg-white/[0.04]"
     >
       <div className="relative h-52 w-full border-b border-black/10 bg-black/5 dark:border-white/15 dark:bg-white/10">
         {imgUrl ? (

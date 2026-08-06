@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
+import PalaceGateWallpaper from "@/components/PalaceGateWallpaper";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
 });
 
 // FILL IN: title, description, Open Graph tags, and favicon (replace src/app/favicon.ico).
@@ -35,9 +43,9 @@ export const metadata: Metadata = {
   },
 };
 
-// Runs before paint so the page never flashes the wrong theme. Reads the saved
-// preference (set by the theme toggle in Nav.tsx) or falls back to system preference.
-const themeInitScript = `(function(){try{var t=localStorage.getItem("theme");var dark=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;if(dark)document.documentElement.classList.add("dark");}catch(e){}})();`;
+// Runs before paint so the page never flashes the wrong theme. Site defaults to
+// dark (set by the theme toggle in Nav.tsx) unless the visitor explicitly chose light.
+const themeInitScript = `(function(){try{var t=localStorage.getItem("theme");var dark=t?t==="dark":true;if(dark)document.documentElement.classList.add("dark");}catch(e){}})();`;
 
 export default function RootLayout({
   children,
@@ -45,11 +53,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <PalaceGateWallpaper />
+        {children}
+      </body>
     </html>
   );
 }

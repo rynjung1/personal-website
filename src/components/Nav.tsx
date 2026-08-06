@@ -35,7 +35,7 @@ export default function Nav() {
           onClick={toggleTheme}
           aria-label="Toggle light / dark theme"
           title="Toggle light / dark theme"
-          className="flex shrink-0 items-center gap-1.5 text-sm font-semibold tracking-tight text-foreground transition-colors hover:text-accent"
+          className="flex shrink-0 items-center gap-1.5 font-serif text-base italic tracking-tight text-foreground transition-colors hover:text-accent"
         >
           {/* FILL IN: your name */}
           {site.name}

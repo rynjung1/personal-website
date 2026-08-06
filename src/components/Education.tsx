@@ -5,7 +5,7 @@ import { education } from "@/data/education";
 export default function Education() {
   return (
     <section id="education" className="mx-auto max-w-3xl px-6 py-16">
-      <h2 className="text-xl font-semibold tracking-tight">Education</h2>
+      <h2 className="font-serif text-2xl italic tracking-tight sm:text-3xl">Education</h2>
 
       <div className="mt-8 flex flex-col gap-4">
         {education.map((item, index) => (

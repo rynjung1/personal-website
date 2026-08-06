@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <footer id="contact" className="mx-auto max-w-3xl px-6 py-20">
       <FadeIn>
-        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+        <h2 className="font-serif text-2xl italic tracking-tight sm:text-3xl">
           Wanna get in touch?
         </h2>
         <p className="mt-3 whitespace-nowrap text-foreground/70">

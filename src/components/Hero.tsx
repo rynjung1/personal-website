@@ -1,11 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Playfair_Display, Song_Myung } from "next/font/google";
+import { Song_Myung } from "next/font/google";
 import SocialLinks from "@/components/SocialLinks";
 import { site } from "@/data/site";
 
-const serif = Playfair_Display({ subsets: ["latin"], weight: "700", style: "italic" });
 const korean = Song_Myung({ subsets: ["latin"], weight: "400" });
 
 export default function Hero() {
@@ -18,7 +17,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="max-w-xl"
         >
-          <h1 className={`${serif.className} text-3xl italic tracking-tight sm:text-4xl`}>
+          <h1 className="font-serif text-3xl font-bold italic tracking-tight sm:text-4xl">
             {/* FILL IN: your name */}
             {site.name}
             <span
