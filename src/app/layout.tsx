@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 // FILL IN: title, description, Open Graph tags, and favicon (replace src/app/favicon.ico).
-const siteUrl = "https://FILL-IN-your-domain.com";
-const title = "FILL IN: Your Name — Portfolio";
-const description = "FILL IN: a one-sentence summary of who you are and what you do.";
+const siteUrl = "https://rynjung.com";
+const title = "Ryan Jung";
+const description = "Computer Science student at Waterloo building scalable full-stack applications, data pipelines, and AI-driven web tools.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
