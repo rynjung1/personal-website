@@ -10,7 +10,7 @@ export default function Experience() {
       <div className="mt-8 flex flex-col gap-5">
         {experience.map((role, index) => (
           <FadeIn key={`${role.company}-${role.title}`} delay={index * 0.05}>
-            <article className="rounded-xl border border-black/10 bg-white p-6 shadow-md shadow-black/5 border-l-4 border-l-accent dark:border-white/10 dark:border-l-accent dark:bg-white/[0.03] dark:shadow-black/40">
+            <article className="rounded-xl border border-white/20 bg-transparent p-6 shadow-lg shadow-black/5 backdrop-blur-sm backdrop-saturate-150 border-l-4 border-l-accent dark:border-white/[0.06] dark:border-l-accent dark:bg-white/[0.01] dark:shadow-black/40">
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <div>
                   <div className="flex flex-wrap items-center gap-2">

@@ -10,7 +10,7 @@ export default function Education() {
       <div className="mt-8 flex flex-col gap-4">
         {education.map((item, index) => (
           <FadeIn key={`${item.school}-${item.degree}`} delay={index * 0.05}>
-            <article className="rounded-xl border border-black/10 bg-white p-6 shadow-md shadow-black/5 dark:border-white/10 dark:bg-white/[0.03] dark:shadow-black/40">
+            <article className="rounded-xl border border-white/20 bg-transparent p-6 shadow-lg shadow-black/5 backdrop-blur-sm backdrop-saturate-150 dark:border-white/[0.06] dark:bg-white/[0.01] dark:shadow-black/40">
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <div>
                   <h3 className="text-lg font-bold text-accent">{item.degree}</h3>
