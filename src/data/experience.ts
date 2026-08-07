@@ -3,7 +3,7 @@ import type { ExperienceItem } from "@/lib/types";
 // Ordered most recent first.
 export const experience: ExperienceItem[] = [
   {
-    title: "Cloud Financial Engineer", // adjust title wording if needed
+    title: "Cloud Financial Engineer Intern", // adjust title wording if needed
     company: "Statistics Canada",
     tag: "Internship",
     location: "Toronto, Ontario, Canada",
@@ -15,7 +15,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Data Engineer",
+    title: "Data Engineer Intern",
     company: "20/20 Missions",
     tag: "Contract",
     location: "Coquitlam, British Columbia, Canada",
@@ -27,7 +27,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Data Engineer",
+    title: "Data Engineer Intern",
     company: "VLS Group Inc",
     tag: "Internship",
     location: "Vaughan, Ontario, Canada",
