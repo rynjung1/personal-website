@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description,
   },
   icons: {
-    icon: "/favicon.ico", // FILL IN: replace src/app/favicon.ico with your own
+    icon: "/favicon.ico",
   },
 };
 

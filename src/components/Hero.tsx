@@ -60,7 +60,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="h-36 w-36 shrink-0 overflow-hidden rounded-full border border-black/10 bg-black/5 sm:h-48 sm:w-48 dark:border-white/15 dark:bg-white/10"
+          className="h-48 w-48 shrink-0 overflow-hidden rounded-full border border-black/10 bg-black/5 sm:h-64 sm:w-64 dark:border-white/15 dark:bg-white/10"
         >
           {site.avatarSrc ? (
             // eslint-disable-next-line @next/next/no-img-element
