@@ -19,7 +19,8 @@ export const projects: Project[] = [
     title: "Stat Tracker",
     link: "https://github.com/rynjung1/stat-tracker",
     description: "Frame-Accurate Softball Hitting Stat Tracker",
-    alt: "Softball batter mid-swing on a practice field",
+    imgUrl: "/projects/stat-tracker.png",
+    alt: "Softball batter mid-swing at dusk under stadium lights",
     chips: [
       { text: "Python", color: "3776AB" },
       { text: "FastAPI", color: "009688" },
