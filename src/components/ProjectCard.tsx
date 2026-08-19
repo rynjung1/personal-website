@@ -46,7 +46,9 @@ export default function ProjectCard({
       </div>
       <div className="px-4 py-3">
         <div className="mb-1 flex flex-row items-center gap-2">
-          <p className="text-lg font-semibold">{title}</p>
+          <a href={link} target="_blank" rel="noreferrer" className="transition-colors hover:text-accent">
+            <p className="text-lg font-semibold">{title}</p>
+          </a>
           <a href={link} target="_blank" rel="noreferrer" aria-label={title}>
             <GithubMark className="h-[18px] w-[18px] text-foreground/60 transition-colors hover:text-accent" />
           </a>
