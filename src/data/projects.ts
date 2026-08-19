@@ -16,6 +16,19 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "Stat Tracker",
+    link: "https://github.com/rynjung1/stat-tracker",
+    description: "Frame-Accurate Softball Hitting Stat Tracker",
+    alt: "Softball batter mid-swing on a practice field",
+    chips: [
+      { text: "Python", color: "3776AB" },
+      { text: "FastAPI", color: "009688" },
+      { text: "React", color: "61DAFB" },
+      { text: "TypeScript", color: "3178C6" },
+      { text: "PostgreSQL", color: "336791" },
+    ],
+  },
+  {
     title: "HandInHand",
     link: "https://github.com/rynjung1/HandInHand",
     description: "ASL Learning Platform",
@@ -26,19 +39,6 @@ export const projects: Project[] = [
       { text: "FastAPI", color: "009688" },
       { text: "React", color: "61DAFB" },
       { text: "Docker", color: "2496ED" },
-    ],
-  },
-  {
-    title: "PayTrace",
-    link: "https://github.com/rynjung1/payout-warehouse",
-    description: "Payout Warehouse",
-    imgUrl: "/projects/paytrace.jpg",
-    alt: "Trading floor with monitors overlooking a city skyline",
-    chips: [
-      { text: "Dagster", color: "6A31EF" },
-      { text: "dbt", color: "FF694B" },
-      { text: "PostgreSQL", color: "336791" },
-      { text: "FastAPI", color: "009688" },
     ],
   },
   {
@@ -53,6 +53,19 @@ export const projects: Project[] = [
       { text: "AWS", color: "FF9900" },
       { text: "PostgreSQL", color: "336791" },
       { text: "Docker", color: "2496ED" },
+    ],
+  },
+  {
+    title: "PayTrace",
+    link: "https://github.com/rynjung1/payout-warehouse",
+    description: "Payout Warehouse",
+    imgUrl: "/projects/paytrace.jpg",
+    alt: "Trading floor with monitors overlooking a city skyline",
+    chips: [
+      { text: "Dagster", color: "6A31EF" },
+      { text: "dbt", color: "FF694B" },
+      { text: "PostgreSQL", color: "336791" },
+      { text: "FastAPI", color: "009688" },
     ],
   },
   {
