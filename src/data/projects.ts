@@ -41,7 +41,6 @@ export const projects: Project[] = [
       { text: "React", color: "61DAFB" },
       { text: "Vite", color: "646CFF" },
       { text: "Chrome MV3", color: "4285F4" },
-      { text: "Google Sheets API", color: "34A853" },
     ],
   },
   {
